@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -24,24 +25,25 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="#1130F3"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:background="#F06B9FDF"
+            android:gravity="center"
+            android:orientation="horizontal">
 
-            <ImageButton
+            <ImageView
                 android:id="@+id/imageButton5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/avatars"
-                />
+                android:src="@drawable/pasta"
+                tools:src="@drawable/pasta"
+                tools:srcCompat="@drawable/pasta" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:background="#FF0C0C"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:background="#EACF46"
+            android:gravity="top|center"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button3"
@@ -53,7 +55,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#F39970">
 
             <TextView
                 android:id="@+id/text1"
@@ -82,7 +85,7 @@
                 android:layout_marginBottom="214dp"
                 android:ems="10"
                 android:inputType="text"
-                android:text="Name"
+                android:text=""
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
