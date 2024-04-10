@@ -1,7 +1,9 @@
 
 # Rapport
-
-
+I detta arbete har jag innuti startlayouten ConstraintLayout lagt till yttigare layouts. En LinearLayout(Vertical) som innuti sig har 3 andra layouts, 2 linear layout (Horizontal) och en ConstraintLayout. I den första inre LinearLayouten skapas en ImageView som centrers i mitten, genom ```android:gravity="center"```.
+I linearLayout nr 2 skapas det en knapp som läggs top/center genom ```android:gravity="top|center"```
+I den inre ConstraintLayout skapas det en TextView och en EditText view. Dessa Constrainas och plaseras i mitten genom skystering av dp marain.
+Dessa två är även constrainade till varandra bottom-top och top-bottom.
 ```
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
